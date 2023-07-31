@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "imagen":"../imagenes/Canguro.png",
+      "nombre": "Canguro",
+      "precio": 1890,
+      "cantidad": 1
+    },
+    {
+      "id": 2,
+      "imagen":"../imagenes/Tapabocas.png",
+      "nombre": "Tapabocas",
+      "precio": 350,
+      "cantidad": 1
+    },
+    {
+      "id": 3,
+      "imagen":"../imagenes/Camiseta.png",
+      "nombre": "Remera",
+      "precio": 1590,
+      "cantidad": 1
+    },
+    {
+      "id": 4,
+      "imagen":"../imagenes/Gorro.png",
+      "nombre": "Gorro",
+      "precio": 790,
+      "cantidad": 1
+    },
+    {
+      "id": 5,
+      "imagen":"../imagenes/Evermeet_Bufanda.jpeg",
+      "nombre": "Bufanda",
+      "precio": 450,
+      "cantidad": 1
+    },
+    {
+      "id": 6,
+      "imagen":"../imagenes/Evermeet_Freesbe.jpeg",
+      "nombre": "Fresbe",
+      "precio": 200,
+      "cantidad": 1
+    },
+    {
+      "id": 7,
+      "imagen":"../imagenes/Evermeet_Mousepad.jpeg",
+      "nombre": "MousePad",
+      "precio": 250,
+      "cantidad": 1
+    },
+    {
+      "id": 8,
+      "imagen":"../imagenes/Evermeet_Taza.jpeg",
+      "nombre": "Taza",
+      "precio": 140,
+      "cantidad": 1
+    }
+  ]
+  

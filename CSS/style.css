@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+.img-background{
+    background-image: url(../imagenes/04_Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: black;
+    color: white;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #cart-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: black;
+    color: white;
+  }
+  
+  .cart-item {
+    margin-bottom: 5px;
+  }
+
+  .button{
+    color: black;
+    background-color: greenyellow;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+}
+
+.button-login{
+  color: black;
+  background-color: greenyellow;
+  font-size: 15px;
+  width: 60px;
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.img-evermet{
+    width:450px;
+    height: 175px;
+    background-color: black;
+}
+
+.black-background{
+    background-color: black;
+    
+}
+.title-white{
+  color: white;
+
+}
