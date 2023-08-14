@@ -1,3 +1,4 @@
+
 fetch('./js/productos.json')
   .then(response => response.json())
   .then(data => renderProducts(data))
@@ -43,6 +44,14 @@ function renderProducts(products) {
       }
     
       localStorage.setItem("cart", JSON.stringify(cart));
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El producto ah sido agregado con éxito',
+        showConfirmButton: false,
+        timer: 1500,
+        background: "black",
+      })
       showCart();
     });
 
@@ -53,7 +62,7 @@ function renderProducts(products) {
 
     productContainer.appendChild(productDiv);
      localStorage.setItem("cart", JSON.stringify(cart));
-  });
+    });
 }
 
 
@@ -64,13 +73,16 @@ function getNick() {
   localStorage.setItem("cartName", JSON.stringify(cartName));
   return nickLabel;
 }
-
-getNick();
+function ShowStore(){
+  var Change = document.getElementById("product-container");
+  Change.style.display = 'block';
+}
 
 let save = document.querySelector(".save");
 save.addEventListener("click", () => {
   getNick();
   showCart();
+  ShowStore();
 });
 
 let cart = [];
@@ -95,11 +107,24 @@ function showCart() {
     cartItemDiv.className = 'cart-item';
     const totalPrice = item.precio * item.cantidad;
     cartItemDiv.textContent = `${item.nombre} - Cantidad: ${item.cantidad} - Precio Total: $${totalPrice}`;
+    const deleteButton = document.createElement('button');
+    deleteButton.className = 'delete-button button-login';
+    deleteButton.textContent = '🗑';
+    deleteButton.addEventListener('click', () => {
+      if (item.cantidad === 1) {
+        cart = cart.filter(cartItem => cartItem.nombre !== item.nombre);
+      } else {
+        item.cantidad -= 1; 
+      }
 
+      showCart(); 
+    });
+
+    cartItemDiv.appendChild(deleteButton);
+  
     cartContentConteiner.appendChild(cartItemDiv);
-
+  
     cartTotal += totalPrice;
   });
-
   cartTotalConteiner.textContent = `Total: $${cartTotal}`;
 }
