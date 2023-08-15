@@ -47,7 +47,7 @@ function renderProducts(products) {
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'El producto ah sido agregado con éxito',
+        title: 'El producto ha sido agregado con éxito',
         showConfirmButton: false,
         timer: 1500,
         background: "black",
