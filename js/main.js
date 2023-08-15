@@ -45,12 +45,14 @@ function renderProducts(products) {
     
       localStorage.setItem("cart", JSON.stringify(cart));
       Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
+        iconColor: 'greenyellow',
         title: 'El producto ha sido agregado con éxito',
         showConfirmButton: false,
         timer: 1500,
         background: "black",
+        color: "white",
       })
       showCart();
     });
